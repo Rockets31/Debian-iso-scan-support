@@ -9,7 +9,7 @@ The principle is pretty easy. You load the provided 'iso-scan-13.6.0.gz' along w
 
 0. You need to use MultiOS-USB partition on 'exfat' or 'ext4' filesystem.
 1. Copy your Debian 13.6.0 iso files to 'ISOs' directory.
-2. Copy 'iso-scan-13.6.0.gz' file to MultiOS-USB partition, so it is next to 'ISOs'& 'MultiOS-USB' directory.
+2. Copy 'iso-scan-13.6.0.gz' file to MultiOS-USB partition, so it is next to 'ISOs' & 'MultiOS-USB' directory.
 3. Create a directory for 'cfg' files: '/MultiOS-USB/config_priv/debian-iso-scan'
 4. Copy 'debian-13.6.0-amd64_d-i.cfg' and 'debian-13.6.0-amd64-live_d-i.cfg' there.
 5. Reboot into 'MultiOS-USB' and start iso file.
