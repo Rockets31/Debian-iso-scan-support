@@ -1,3 +1,24 @@
 # Debian-iso-scan-support
-Providing additional functionality for diskless booting & installation of Debian GNU/Linux via GNU Grub2. It is possible booting official Debian Installation (live) media via GNU Grub2, but it is not possible instaaling the system via Debian Installer. This repository provides config and image files for this installation scenario.
-For booting and executing Debian Installer from the iso-image is additional functionality necessary. I provide support for exfat, ext4, loop-devices and iso file detection via initrd for official Debian installation media. Via Grub2 loopback function get kernel, initramfs & our additional initrd of the installation media loaded and Debian Installer is ready for installation. There are some limitations, the iso file has to reside on exfat or ext4 filesystems and only Debian-13.6.0 is supported. The iso detection scans first and second directory levels. This solution was triggered by this bug report https://github.com/Mexit/MultiOS-USB/issues/77 and adopted to MultiOS-USB as a 'one-click-solution', but is usable with any Grub2 loopback setup. All files used for the initrd "iso-scan-13.6.0.gz" are provide by Debian Devs and Maintainers of Debian 13 ("trixie") release.
+Providing additional functionality for diskless booting & installation of Debian GNU/Linux via GNU GRUB. It is possible booting official Debian Installation (live) media via GNU GRUB, but it is not possible installing the system via Debian Installer. This repository provides config and image files for this installation scenario.
+For booting and executing Debian Installer from the iso-image is additional functionality necessary. I provide support for exfat, ext4, loop-devices and iso file detection via initrd for official Debian installation media. Via grub2 loopback function get kernel, initramfs & our additional initrd of the installation media loaded and Debian Installer is ready for installation. There are some limitations, the iso file has to reside on exfat or ext4 filesystems and only Debian-13.6.0 is supported. The iso detection scans first and second directory levels. This solution was triggered by this bug report https://github.com/Mexit/MultiOS-USB/issues/77 and adopted to MultiOS-USB as a 'one-click-solution', but is usable with any Grub2 loopback setup. All files used for the initrd "iso-scan-13.6.0.gz" are provide by Debian Project, Devs and Maintainers of Debian 13 ("trixie").
+
+Supported ISOs: debian-13.6.0-amd64-DVD-1.iso, debian-13.6.0-amd64-netinst.iso, debian-live-13.6.0-amd64-cinnamon.iso, debian-live-13.6.0-amd64-debian-junior.iso, debian-live-13.6.0-amd64-gnome.iso, debian-live-13.6.0-amd64-kde.iso, debian-live-13.6.0-amd64-lxde.iso, debian-live-13.6.0-amd64-lxqt.iso, debian-live-13.6.0-amd64-mate.iso, debian-live-13.6.0-amd64-standard.iso, debian-live-13.6.0-amd64-xfce.iso.
+
+# Usage
+The principle is pretty easy, you load the provided 'iso-scan-13.6.0.gz' along the main 'initrd.gz' of the installation media via grub loopback module. This adds necessary functionality for installing the Debian 13.6 vis debian installer. Supported files: If you are using 'https://github.com/Mexit/MultiOS-USB', it is just a few steps:
+
+0. You need to use MultiOS-USB partition on 'exfat' or 'ext4' filesystem.
+1. Copy your Debian 13.6.0 iso files to 'ISOs' directory.
+2. Copy 'iso-scan-13.6.0.gz' file to MultiOS-USB partition, so it is next to 'ISOs'& 'MultiOS-USB' directory.
+3. Create a directory for 'cfg' files: '/MultiOS-USB/config_priv/debian-iso-scan'
+4. Copy 'debian-13.6.0-amd64_d-i.cfg' and 'debian-13.6.0-amd64-live_d-i.cfg' there.
+5. Reboot into 'MultiOS-USB' and start iso file.
+6. The installer will scan for devices & iso files and you have to select it.
+
+# Screenshots
+<img width="1080" height="450" alt="iso-scan_ask_device_0-cut" src="https://github.com/user-attachments/assets/e6b0c205-84c6-441b-908c-7bdc4adf4295" />
+
+<img width="1080" height="450" alt="iso-scan_ask_which_iso_0-cut" src="https://github.com/user-attachments/assets/e9661a6f-2401-4053-b800-c789cdfc25c9" />
+
+
+
