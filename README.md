@@ -5,7 +5,7 @@ For booting and executing Debian Installer from the iso-image is additional func
 Supported ISOs: debian-13.6.0-amd64-DVD-1.iso, debian-13.6.0-amd64-netinst.iso, debian-live-13.6.0-amd64-cinnamon.iso, debian-live-13.6.0-amd64-debian-junior.iso, debian-live-13.6.0-amd64-gnome.iso, debian-live-13.6.0-amd64-kde.iso, debian-live-13.6.0-amd64-lxde.iso, debian-live-13.6.0-amd64-lxqt.iso, debian-live-13.6.0-amd64-mate.iso, debian-live-13.6.0-amd64-standard.iso, debian-live-13.6.0-amd64-xfce.iso.
 
 # Usage
-The principle is pretty easy, you load the provided 'iso-scan-13.6.0.gz' along the main 'initrd.gz' of the installation media via grub loopback module. This adds necessary functionality for installing the Debian 13.6 vis debian installer. Supported files: If you are using 'https://github.com/Mexit/MultiOS-USB', it is just a few steps:
+The principle is pretty easy. You load the provided 'iso-scan-13.6.0.gz' along with the main 'initrd.gz' of the installation media via grub loopback module. This adds necessary functionality for installing the Debian 13.6 vis debian installer. Supported files: If you are using 'https://github.com/Mexit/MultiOS-USB', it is just a few steps:
 
 0. You need to use MultiOS-USB partition on 'exfat' or 'ext4' filesystem.
 1. Copy your Debian 13.6.0 iso files to 'ISOs' directory.
