@@ -12,9 +12,9 @@ For booting and executing Debian Installer from the iso-image is additional func
 Load provided 'iso-scan-13.6.0.gz' along with the main 'initrd.gz' of the installation media via grub loopback module. This adds necessary functionality for installing Debian 13.6 via debian installer. If you are using 'https://github.com/Mexit/MultiOS-USB', it is just a few steps:
 
 0. Use MultiOS-USB partition on 'exfat' or 'ext4' filesystem.
-1. Copy your Debian-13.6.0 iso files to 'ISOs' directory.
+1. Copy your Debian-13.6.0-iso files to 'ISOs' directory.
 2. Copy 'iso-scan-13.6.0.gz' file to MultiOS-USB partition, so it is next to 'ISOs' & 'MultiOS-USB' directory.
-3. Create a directory for 'grub.cfg' files: '/MultiOS-USB/config_priv/debian-iso-scan'
+3. Create a directory for 'grub.cfg' files e.g.: '/MultiOS-USB/config_priv/debian-iso-scan'
 4. Copy 'debian-13.6.0-amd64_d-i.cfg' and 'debian-13.6.0-amd64-live_d-i.cfg' there.
 5. Reboot into 'MultiOS-USB' and start e.g. 'debian-13.6.0-amd64-DVD-1.iso [config_priv]' entry.
 6. The installer will scan for devices & iso files and you have to select it.
