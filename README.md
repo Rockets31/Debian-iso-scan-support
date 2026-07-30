@@ -24,5 +24,8 @@ Load provided 'iso-scan-13.6.0.gz' along with the main 'initrd.gz' of the instal
 
 <img width="1080" height="450" alt="iso-scan_ask_which_iso_0-cut" src="https://github.com/user-attachments/assets/e9661a6f-2401-4053-b800-c789cdfc25c9" />
 
+<img width="1080" height="800" alt="grub-dark-lang2" src="https://github.com/user-attachments/assets/136d5955-c799-48ed-9f71-c91ebf25681a" />
+
+
 
 
