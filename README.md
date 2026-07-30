@@ -16,7 +16,7 @@ Load provided 'iso-scan-13.6.0.gz' along with the main 'initrd.gz' of the instal
 2. Copy 'iso-scan-13.6.0.gz' file to MultiOS-USB partition, so it is next to 'ISOs' & 'MultiOS-USB' directory.
 3. Create a directory for 'grub.cfg' files: '/MultiOS-USB/config_priv/debian-iso-scan'
 4. Copy 'debian-13.6.0-amd64_d-i.cfg' and 'debian-13.6.0-amd64-live_d-i.cfg' there.
-5. Reboot into 'MultiOS-USB' and start 'debian-*-13.6.0-*.iso [config_priv]' entry.
+5. Reboot into 'MultiOS-USB' and start e.g. 'debian-13.6.0-amd64-DVD-1.iso [config_priv]' entry.
 6. The installer will scan for devices & iso files and you have to select it.
 
 # Screenshots
