@@ -1,6 +1,6 @@
 # Debian-iso-scan-support
 Providing additional functionality for diskless booting & installation of Debian GNU/Linux via GNU GRUB. It is possible booting official Debian Installation (live) media diskless via GNU GRUB, but it is not possible installing the system via Debian Installer. This repository provides config and image files for this installation scenario.
-This solution was triggered by this bug report https://github.com/Mexit/MultiOS-USB/issues/77 and adopted to MultiOS-USB as a 'one-click-solution', but is usable with any grub2 loopback setup. All files used for the initrd "iso-scan-13.6.0.gz" are provided by Debian Project (Debian 13: iso-scan_1.98_all.udeb, initrd.img-6.12.94+deb13-amd64: exfat.ko.xz, ext4.ko.xz, jbd2.ko.xz, loop.ko.xz.
+This solution was triggered by this bug report https://github.com/Mexit/MultiOS-USB/issues/77 and adopted to MultiOS-USB as a 'one-click-solution', but is usable with any grub2 loopback setup. All files used for the initrd "iso-scan-13.6.0.gz" are provided by Debian Project (Debian 13 "trixie" see: [here](https://github.com/Rockets31/Debian-iso-scan-support/blob/main/docs/README_inst)).
 
 # Features
 - Filesystems: exfat, ext4
