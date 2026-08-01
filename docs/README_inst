@@ -1,4 +1,4 @@
-Debian-iso-scan-support
+Debian-13-iso-scan-support
 
 Providing additional functionality for diskless booting & installation of Debian GNU/Linux via GNU GRUB. 
 It is possible booting official Debian Installation (live) media diskless via GNU GRUB, but it is not possible 
